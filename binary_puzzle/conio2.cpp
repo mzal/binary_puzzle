@@ -474,12 +474,12 @@ void textmode(int mode) {
 	mode = mode & (~FULLSCREEN);
 	if(mode == C80) {
 		thData.width = 80;
-		thData.height = 25;
-		ResizeConsole(thData.output, 80, 25, 25);
+		thData.height = 100;
+		ResizeConsole(thData.output, 80, 100, 100);
 	} else if(mode == C4350) {
 		thData.width = 80;
-		thData.height = 50;
-		ResizeConsole(thData.output, 80, 50, 50);
+		thData.height = 100;
+		ResizeConsole(thData.output, 80, 100, 100);
 	} else if(mode == LASTMODE) {
 		textmode(thData.lastmode);
 		};
